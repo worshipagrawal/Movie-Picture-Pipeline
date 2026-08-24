@@ -1,11 +1,18 @@
 name: Backend Continuous Integration
 
 on:
+  push:
+    branches:
+      - main
+    paths:
+      - "starter/backend/**"
+
   pull_request:
     branches:
       - main
     paths:
       - "starter/backend/**"
+
   workflow_dispatch:
 
 jobs:
